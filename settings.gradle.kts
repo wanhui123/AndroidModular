@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndroidModular"
 include(":app")
- 
+include(":core:common")
