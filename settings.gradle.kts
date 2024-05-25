@@ -22,3 +22,5 @@ dependencyResolutionManagement {
 rootProject.name = "AndroidModular"
 include(":app")
 include(":core:common")
+include(":feature:user")
+include(":feature:settings")
