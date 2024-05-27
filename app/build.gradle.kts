@@ -66,8 +66,15 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    //hilt
     implementation("com.google.dagger:hilt-android:2.48")
     kapt("com.google.dagger:hilt-android-compiler:2.48")
+
+    //okhttp3 + retrofit2
+    implementation(libs.okhttp3)
+    implementation(libs.okhttp3LoggingInterceptor)
+    implementation(libs.retrofit2)
+    implementation(libs.retrofit2ConverterGson)
 }
 
 // Allow references to generated code
