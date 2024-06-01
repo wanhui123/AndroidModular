@@ -5,4 +5,5 @@ package com.wanhui.core.common.navigation
  */
 object NavigationManager {
     var userNavigator: UserNavigator? = null
+    var settingsNavigator: SettingsNavigator? = null
 }

@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import com.wanhui.core.common.navigation.NavigationManager
 
 /**
  * Created by WanHui on 2024/6/1
@@ -36,7 +37,8 @@ class UserActivity: ComponentActivity() {
     fun UserScreen() {
         Box(modifier = Modifier.fillMaxSize(),contentAlignment = Alignment.Center) {
             Text("User Screen", modifier = Modifier.clickable {
-
+                // 使用 NavigationManager 进行跳转
+                NavigationManager.settingsNavigator?.navigateToSettings(this@UserActivity)
             })
         }
     }
