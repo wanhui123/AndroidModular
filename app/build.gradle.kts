@@ -75,6 +75,14 @@ dependencies {
     implementation(libs.okhttp3LoggingInterceptor)
     implementation(libs.retrofit2)
     implementation(libs.retrofit2ConverterGson)
+
+    //common 模块
+    implementation(project(":core:common"))
+
+    //业务模块 - 用户
+    implementation(project(":feature:user"))
+    //业务模块 - 设置
+    implementation(project(":feature:settings"))
 }
 
 // Allow references to generated code

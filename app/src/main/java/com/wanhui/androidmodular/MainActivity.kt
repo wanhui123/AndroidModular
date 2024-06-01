@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.wanhui.androidmodular.ui.theme.AndroidModularTheme
+import com.wanhui.core.user.UserActivity
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -37,6 +38,7 @@ class MainActivity : ComponentActivity() {
                             onClick = {
                                 val str = mainViewModel.getData()
                                 Toast.makeText(this@MainActivity, str, Toast.LENGTH_SHORT).show()
+                                UserActivity.start(this@MainActivity)
                             },
                             modifier = Modifier.padding(innerPadding)
                         ) {
