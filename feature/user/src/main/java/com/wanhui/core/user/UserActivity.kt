@@ -36,7 +36,7 @@ class UserActivity: ComponentActivity() {
     @Composable
     fun UserScreen() {
         Box(modifier = Modifier.fillMaxSize(),contentAlignment = Alignment.Center) {
-            Text("User Screen", modifier = Modifier.clickable {
+            Text("用户模块 点击进入设置模块", modifier = Modifier.clickable {
                 // 使用 NavigationManager 进行跳转
                 NavigationManager.settingsNavigator?.navigateToSettings(this@UserActivity)
             })

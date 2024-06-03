@@ -7,6 +7,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -33,8 +34,8 @@ class SettingsActivity : ComponentActivity() {
 
     @Composable
     fun SettingsScreen() {
-        Box(contentAlignment = Alignment.Center) {
-            Text("Settings Screen", modifier = Modifier.clickable {
+        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            Text("设置模块 点击进入用户模块", modifier = Modifier.clickable {
                 // 检查并使用 NavigationManager 进行跳转
                 NavigationManager.userNavigator?.navigateToUserDetail(this@SettingsActivity,"12345")
             })
